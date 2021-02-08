@@ -1,5 +1,35 @@
-h1, #top-banner {
+html {
     background-color: #CEEEF2;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+}
 
+#top-banner {
+    background-color: #7FC0C9;
+    height: 150%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+   display: flex;
+   flex-direction: column; 
+}
+
+.bio-image {
+    width: 15%;
+    height: 15%;
+}
+
+#big-project {
+    width:400px;
+    height:200px;
+}
+
+.small-project {
+    width: 150px;
+    height: 150px;
 }

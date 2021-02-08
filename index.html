@@ -3,25 +3,34 @@
 
 <head>
     <title>Katie Devinney</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
 </head>
 
 <body>
-    <h1>Katie Devinney</h1>
-    <div id="top-banner">About My Work Contact</div>
+    <nav id="top-banner">
+        <h1>Katie Devinney</h1>
+        <ul>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <div id="pic">
-        <h2>A pic will go here</h2>
-        <img src="https://via.placeholder.com/200" alt="placeholder image">
-    </div>
-
     <div id="about-me">
+        <h2>A pic will go here</h2>
+        <img class="bio-image" src="./images/bio-image.JPG" alt="Katie Devinney" >
         <h2>A bio will go here</h2>
+            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit odio, vulputate aliquet turpis id, imperdiet elementum ex. Ut posuere eros id est mattis viverra. Aliquam erat volutpat. Etiam finibus eros et fringilla pulvinar. Vivamus viverra nibh nunc, vel luctus eros malesuada ac. Maecenas et nisi at libero egestas cursus. Fusce nec laoreet lacus, nec aliquet elit.</p>
     </div>
 
     <div id="projects">
-        <h3>Links to projects</h3>
+        <h3>My Work</h3>
+        <div class="flex-container">
+            <img id="big-project" src="./images/400x200.png" alt="placeholder image">
+            <img class="small-project" src="./images/150.png" alt="placeholder image">
+            <img class="small-project" src="./images/150.png" alt="placeholder image">
+        </div>
     </div>
 
     <div id="contact">
