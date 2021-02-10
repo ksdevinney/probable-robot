@@ -1,12 +1,25 @@
 html {
     background-color: #CEEEF2;
     background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#top-banner {
+/* #top-banner {
     background-color: #7FC0C9;
     height: 150%;
-}
+    border-color: crimson;
+    border-width: 3px;
+} */
+
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #7FC0C9;
+  }
 
 ul {
     list-style-type: none;
@@ -14,9 +27,16 @@ ul {
     padding: 0;
 }
 
+#about-me {
+    display: flex;
+    flex-direction: row;
+}
+
 .flex-container {
    display: flex;
-   flex-direction: column; 
+   flex-direction: row; 
+   border-color: crimson;
+   border-width: 3px;
 }
 
 .bio-image {
