@@ -7,8 +7,6 @@ html {
 /* #top-banner {
     background-color: #7FC0C9;
     height: 150%;
-    border-color: crimson;
-    border-width: 3px;
 } */
 
 header {
@@ -34,9 +32,7 @@ ul {
 
 .flex-container {
    display: flex;
-   flex-direction: row; 
-   border-color: crimson;
-   border-width: 3px;
+   flex-direction: column; 
 }
 
 .bio-image {
@@ -44,9 +40,15 @@ ul {
     height: 15%;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
 #big-project {
     width:400px;
     height:200px;
+    flex-basis: 100%;
 }
 
 .small-project {
