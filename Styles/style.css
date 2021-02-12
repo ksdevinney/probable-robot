@@ -4,10 +4,14 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* #top-banner {
+a:visited {
+    color: #CECCDE;
+}
+
+#top-banner {
     background-color: #7FC0C9;
     height: 150%;
-} */
+}
 
 header {
     padding: 15px 6% 15px 0;
@@ -25,6 +29,13 @@ ul {
     padding: 0;
 }
 
+li::before {
+        font-family: Impact;
+        content: '\273A';
+        color: #757D39;
+        margin-right: 5px;
+}
+
 #about-me {
     display: flex;
     flex-direction: row;
@@ -38,20 +49,30 @@ ul {
 .bio-image {
     width: 15%;
     height: 15%;
+    padding: 50px;
+}
+
+.bio {
+    padding: 50px;
 }
 
 #projects {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin:auto;
 }
 
 #big-project {
     width:400px;
     height:200px;
     flex-basis: 100%;
+    border: 3px solid #CECCDE
 }
 
 .small-project {
     width: 150px;
     height: 150px;
+    border: 3px solid #CECCDE
 }
