@@ -13,6 +13,10 @@ a:visited {
     height: 150%;
 }
 
+p {
+    text-align: center;
+}
+
 header {
     padding: 15px 6% 15px 0;
     display: flex;
