@@ -77,8 +77,8 @@ li::before {
 }
 
 #small-projects {
-    height: 150px;
-    border: 3px solid #CECCDE
+    height: 150%;
+    border: 3px solid #CECCDE;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 5px;
