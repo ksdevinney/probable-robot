@@ -3,8 +3,10 @@
 
 <head>
     <title>Katie Devinney</title>
-   <!-- <link rel="stylesheet" href="./styles/reset.css" > -->
-    <link rel="stylesheet" href="./Styles/style.css" >
+    <!-- <link rel="stylesheet" href="./styles/reset.css" > -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/style.css">
 </head>
 
 <body>
@@ -15,26 +17,51 @@
             <li><a href="#about-me">About</a></li>
             <li><a href="#projects">My Work</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
         </ul>
     </header>
-    
-    <main class="page-wrapper">
+
+    <main class="container">
         <div id="about-me">
             <!--pic should be on left, bio on right-->
-            <img class="bio-image" src="./images/bio-image.JPG" alt="Katie Devinney" >
-                <p class="bio">I am an SMU undergraduate with a degree in English. I have spent the past 8 years teaching elementary school, and now I am diving into web development. Computers have always been a hobby of mine, so I am excited to turn my passion into my career! Currently, I am enrolled in SMU's coding boot camp and have experience working with HTML and CSS.</p>
+            <div class="clearfix">
+                <img src="./images/bio-image.JPG" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Katie Devinney">
+
+                <p>
+                    I am an SMU undergraduate with a degree in English. I have spent the past 8 years teaching
+                    elementary school, and now I am diving into web development. Computers have always been a hobby of
+                    mine, so I am excited to turn my passion into my career! Currently, I am enrolled in SMU's coding
+                    boot camp and excited to dive into a new career soon!
+                </p>
+                <ul>Coding Experience:
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+            </div>
         </div>
 
-        <div id="projects">
-            <h3>My Work</h3>
-            <!--big one on top, bottom two next to each other-->
-            <div class="flex-container">
-                <div id="big-project>
-                    <a href="https://ksdevinney.github.io/Horiseon-SEO/" target="_blank"><img src="./images/digital-marketing-meeting.jpg" alt="horiseon header" width="100%"><p>Horiseon SEO</p></a>
+        <div id="projects" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>My Work</h3>
                 </div>
-                <div id="small-projects">
-                    <img src="./images/300.png" alt="placeholder image">
-                    <img src="./images/300.png" alt="placeholder image">
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <img src="./images/password-generator-screenshot.png" class="img-fluid" alt="password generator preview">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/planner-preview.png" class="img-fluid" alt="daily planner preview">
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/weather-dashboard-screenshot.png" class="img-fluid"
+                    alt="weather dashboard preview">
                 </div>
             </div>
         </div>
@@ -45,8 +72,10 @@
                 <li><a href="." target="_blank">Website: You are here</a></li>
                 <li><a href="mailto:katie@devinney.org">katie@devinney.org</a></li>
                 <li><a href="https://www.linkedin.com/in/katie-devinney-3616091b9/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ksdevinney" target="_blank">GitHub</a></li>
             </ul>
         </div>
     </main>
 </body>
+
 </html>
