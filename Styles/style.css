@@ -35,17 +35,12 @@ h1, h6 {
     margin-left: 25px;
   }
 
-span {
-    display: none;
-}
-
-span:hover .tile {
-    display: block;
-    position: absolute;
+.tile {
     bottom: 8px;
     left: 16px;
     font-size: 18px;
     background-color: #CEEEF2;
+    text-align: right;
 }
 
 ul {
@@ -72,11 +67,9 @@ li::before {
    align-items: flex-start;
 }
 
-.bio-image {
+#bio-image {
     border-radius: 15px 50px;
     margin-left: 30px;
-    /* max-width: 15%;
-    max-height: 15%; */
 }
 
 .bio {
@@ -112,32 +105,44 @@ li::before {
 
 /* media queries */
 
-@media screen and (max-width: 980px) {
-    header {
-        justify-content: center;
-        text-align: center;
-    }
-
-    #page-wrapper {
-        justify-content: center;
-        text-align: center;
-    }
-
-    #big-project {
-        flex-shrink: 2
-    }
-}
-
 @media screen and (max-width: 768px) {
     #contact {
         text-align: center;
     }
     
-    #big-project {
-        flex-shrink: 4
+    #projects {
+        max-width: 100%;
     }
 
     .flex-container {
         flex-direction: column;
+    }
+
+    #bio-image {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    #experience {
+        justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    #contact {
+        text-align: center;
+    }
+    
+    #projects {
+        max-width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    #bio-image {
+        max-width: 50%;
+        max-height: 50%;
     }
   }
