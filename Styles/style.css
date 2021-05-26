@@ -6,10 +6,16 @@ html {
 
 a {
     color: #000000;
+    text-decoration: none;
 }
 
 a:visited {
     color: #757D39;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
 }
 
 #top-banner {
@@ -87,6 +93,11 @@ li::before {
     max-width: 100%;
 }
 
+.project-image:hover {
+    /* box-shadow: 10px 10px 5px grey; */
+    opacity: 0.75;
+}
+
 #big-project {
     width:50%;
     height:200px;
@@ -100,6 +111,7 @@ li::before {
 
 .project-image {
     border: 5px solid #7FC0C9;
+    /* margin: 15px; */
 }
 
 /* media queries */
