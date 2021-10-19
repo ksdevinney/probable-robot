@@ -32,8 +32,10 @@
 }
 
 #navbar-logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  /* digital water gradient */
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -68,7 +70,7 @@
 }
 
 .navbar-link:hover {
-  color: #9518fc;
+  color: #ACB6E5;
   transition: all 0.3s ease;
 }
 
@@ -173,14 +175,16 @@
 }
 
 .main-content {
+  margin-left: 10px;
   color: #fff;
   width: 100%;
 }
 
 .main-content h1 {
   font-size: 2rem;
-  background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -188,26 +192,6 @@
   -moz-text-fill-color: transparent;
   text-transform: uppercase;
   margin-bottom: 32px;
-}
-
-.main-content h2 {
-  font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .main-content p {
@@ -229,11 +213,6 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-}
-
-.fa-layer-group,
-.fa-users {
-  font-size: 14rem;
 }
 
 #card-2 {
@@ -274,10 +253,6 @@
     margin-top: 2rem;
   }
 
-  .main-content h2 {
-    font-size: 3rem;
-  }
-
   .main-content p {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -290,11 +265,6 @@
     height: 250px;
   }
 
-  .fa-users,
-  .fa-layer-group {
-    font-size: 4rem;
-  }
-
   .main-content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -302,5 +272,104 @@
 
   .main-content p {
     margin-top: 2rem;
+  }
+}
+
+/* my work section */
+.work {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.work h1 {
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.work-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.work-card {
+  margin: 10px;
+  height: 450px;
+  width: 450px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  /* "jodhpur" */
+  background: #9CECFB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transition: 0.3s ease-in;
+}
+
+.work-card img {
+  margin: 5px;
+}
+
+.too-tall {
+  height: 60%;
+}
+
+.work-card:nth-child(2) {
+  /* "crystal clear" */
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.work-card:nth-child(3) {
+  /* "disco" */
+  background: #4ECDC4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.work-card h2, h3 {
+  text-align: center;
+}
+
+.work-card p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.work-card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 1300px) {
+  .work-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .work-wrapper {
+    grid-template-columns: 1fr;
   }
 }
