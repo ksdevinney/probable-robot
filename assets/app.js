@@ -1,5 +1,5 @@
 const menu = document.querySelector("#mobile-menu");
-const menuLinks = document.querySelector(".navbar-links");
+const menuLinks = document.querySelector(".navbar-link");
 
 const mobileMenu = () => {
     menu.classList.toggle("is-active");
