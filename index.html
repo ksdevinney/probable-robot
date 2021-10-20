@@ -3,24 +3,23 @@
 
 <head>
     <title>Katie Devinney</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#home" id="navbar-logo">Katie Devinney</a>
+        <div class="navbar-container" id="home">
+            <a href="#" id="navbar-logo">Katie Devinney</a>
             <div class="navbar-toggle" id="mobile-menu">
+                <!-- the menu should pop down... -->
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-item">
-                    <a href="#home" class="navbar-link" id="home">Home</a>
+                    <a href="#" class="navbar-link">Home</a>
                 </li>
                 <li class="navbar-item">
                     <a href="#about-me" class="navbar-link" id="about">About</a>
@@ -29,7 +28,7 @@
                     <a href="#my-work" class="navbar-link" id="work">My Work</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#contact" class="navbar-link" id="contact">Contact</a>
+                    <a href="#contact-me" class="navbar-link" id="contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -37,7 +36,7 @@
 
     <!-- about me -->
 
-    <div class="main" id="about-me">
+    <section class="main" id="about-me">
         <div class="main-container">
             <div class="main-img-container">
                 <div class="main-img-card">
@@ -46,19 +45,19 @@
             </div>
             <div class="main-content">
                 <h1>About me</h1>
-                <p>I am an SMU undergraduate with a degree in English. I have spent the past 8 years teaching
-                    elementary school, and now I am diving into web development. Computers have always been a hobby of
-                    mine, so I am excited to turn my passion into my career! Currently, I am enrolled in SMU's coding
-                    boot camp and excited to launch a new career soon!</p>
+                <p>
+                    After 8 years of teaching elementary school, I have taken the plunge into the world of web development! I graduted from SMU with a degree in English and completed SMU's web development boot camp as well. As a new developer, I am excited to learn new technologies and grow my talents. Take a look below at a few of the projects I have worked on! 
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- my work -->
 
-    <div class="work" id="my-work">
+    <section class="work" id="my-work">
         <h1>My Work</h1>
         <div class="work-wrapper">
+            <a href="https://github.com/ksdevinney/staff-directory" target="_blank">
             <div class="work-card">
                 <!-- img! -->
                 <img src="assets/images/directory.png" alt="staff directory app">
@@ -66,20 +65,26 @@
                 <h3>View and organize employee data</h3>
                 <p>Technologies used: React, JavaScript, NPM, RandomUser API</p>
             </div>
-            <div class="work-card">
+        </a>
+        <a href="https://github.com/ksdevinney/sprout-of-this-world" target="_blank">
+            <div class="work-card work-card-2">
                 <!-- img! -->
                 <img src="assets/images/homepage.png" alt="sprout of this world homepage">
                 <h2>Sprout of This World</h2>
                 <h3>Track your house plants, get watering reminders!</h3>
                 <p>Technologies used: HTML, CSS, Handlebars, JavaScript, SQL, Express</p>
             </div>
-            <div class="work-card">
+            </a>
+            <a href="https://github.com/ksdevinney/password-generator" target="_blank">
+            <div class="work-card work-card-3">
                 <!-- img! -->
                 <img src="assets/images/generator-preview.png" alt="password generator">
                 <h2>Password Generator</h2>
                 <h3>Create secure passwords</h3>
                 <p>Technologies used: HTML, CSS, JavaScript</p>
             </div>
+        </a>
+            <a href="https://github.com/ksdevinney/budget-tracker" target="_blank">
             <div class="work-card">
                 <!-- img! -->
                 <img src="assets/images/budget-tracker.png" alt="budget tracker">
@@ -87,10 +92,28 @@
                 <h3>Keep track of expenses, even offline!</h3>
                 <p>Technologies used: HTML, CSS, JavaScript, MongoDB</p>
             </div>
+        </a>
         </div>
-    </div>
+    </section>
 
     <!-- contact -->
+    <section class="contact" id="contact-me">
+        <div class="contact-info">
+            <h1>Contact Me</h1>
+            <ul>
+                <li><a href="mailto:katie@devinney.org">katie@devinney.org</a></li>
+                <li><a href="https://www.linkedin.com/in/katie-devinney-3616091b9/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ksdevinney" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <p class="website-rights">© Katie Devinney</p>
+        </div>
+    </footer>
 
     <script src="assets/app.js"></script>
 </body>
