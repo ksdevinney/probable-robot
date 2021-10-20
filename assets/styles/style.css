@@ -32,6 +32,10 @@
   padding: 0 50px;
 }
 
+.highlight {
+  border-bottom: 4px solid #74ebd5;
+}
+
 #navbar-logo {
   /* digital water gradient */
   background: #74ebd5;  /* fallback for old browsers */
@@ -215,11 +219,24 @@
   color: #fff;
 }
 
-#card-2 {
+.main-content li {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.main-content li::before {
+  font-family: Impact;
+  content: '\273A';
+  /* color: #CECCDE; */
+  margin-right: 5px;
+}
+
+/* #card-2 {
   background: #ff512f;
   background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
   background: linear-gradient(to right, #dd2476, #ff512f);
-}
+} */
 
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
