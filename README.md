@@ -1,6 +1,4 @@
-# Portfolio
-
-![screenshot of deployed page](/images/updated-screenshot.png)
+# My Portfolio
 
 ## About
 
@@ -8,4 +6,4 @@ This repository is my professional web development portfolio. As a beginner web 
 
 This web page also gave me the opportunity to practice with flexbox, psuedo elements, pseudo classes, and other CSS techniques. This page has been updated as I have learned about more technologies.
 
-The portfolio is deployed on [GitHub Pages](https://ksdevinney.github.io/probable-robot/). There is also a version of this project, redone using React.js. This version can be found [here](https://github.com/ksdevinney/react-portfolio).
+The portfolio is deployed on [GitHub Pages](https://ksdevinney.github.io/probable-robot/). 
