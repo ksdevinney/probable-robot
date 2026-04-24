@@ -38,9 +38,17 @@
 
 #navbar-logo {
   /* digital water gradient */
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -64,7 +72,7 @@
 }
 
 .navbar-link {
-  color: #CECCDE;
+  color: #ceccde;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +83,7 @@
 }
 
 .navbar-link:hover {
-  color: #ACB6E5;
+  color: #acb6e5;
   transition: all 0.3s ease;
 }
 
@@ -163,20 +171,13 @@
 /* about section */
 .main {
   background-color: #131313;
-  padding: 10rem 0;
+  padding: 50px 0;
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  max-width: 800px;
   margin: 0 auto;
-  height: 90%;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
 }
 
 .main-content {
@@ -185,32 +186,51 @@
   width: 100%;
 }
 
-.main-content h1 {
+h1 {
   font-size: 2rem;
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 32px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .main-content p {
   margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1rem;
 }
 
 .main-img-container {
-  text-align: center;
+  float: left;
+  width: 25%;
+  margin-right: 10px;
 }
 
 .main-img-card {
   margin: 0px;
-  height: 100%;
   width: 100%;
   border-radius: 45px;
   display: flex;
@@ -220,14 +240,13 @@
 }
 
 .main-content li {
-  font-size: 1.5rem;
   margin-left: 20px;
   list-style: none;
 }
 
 .main-content li::before {
   font-family: Impact;
-  content: '\273A';
+  content: "\273A";
   /* color: #CECCDE; */
   margin-right: 5px;
 }
@@ -304,9 +323,17 @@
 }
 
 .work h1 {
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -333,9 +360,19 @@
   justify-content: center;
   color: #fff;
   /* "jodhpur" */
-  background: #9CECFB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #9cecfb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0052d4,
+    #65c7f7,
+    #9cecfb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #0052d4,
+    #65c7f7,
+    #9cecfb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   transition: 0.3s ease-in;
 }
@@ -346,21 +383,36 @@
 
 .work-card-2 {
   /* "crystal clear" */
-  background: #159957;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #159957; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #155799,
+    #159957
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #155799,
+    #159957
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .work-card-3 {
   /* "disco" */
-  background: #4ECDC4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #4ecdc4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #556270,
+    #4ecdc4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #556270,
+    #4ecdc4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.work-card h2, h3 {
+.work-card h2,
+h3 {
   text-align: center;
 }
 
@@ -400,9 +452,17 @@
 }
 
 .contact h1 {
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -418,17 +478,17 @@
 
 .contact li::before {
   font-family: Impact;
-  content: '\273A';
-  color: #CECCDE;
+  content: "\273A";
+  color: #ceccde;
   margin-right: 5px;
 }
 
 .contact a {
-  color: #CECCDE;
+  color: #ceccde;
 }
 
 .contact a:visited {
-  color: #ACB6E5;
+  color: #acb6e5;
 }
 
 /* footer */
